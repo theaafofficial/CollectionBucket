@@ -1,0 +1,13 @@
+{
+  "name": "CollectionBucket",
+  "version": "1.0",
+  "description": "Save selected text and the current URL with a right-click",
+  "manifest_version": 3,
+  "permissions": ["tabs", "storage", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

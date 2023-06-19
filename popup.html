@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <h4 class="text-center mb-4">CollectionBucket</h4>
+      <div id="listContainer" class="list-group">
+        <div id="savedItems" class="scrollable"></div>
+      </div>
+      <div id="detailContainer" style="display: none">
+        <button id="backButton" class="btn btn-sm btn-secondary mb-3">
+          <i class="fa fa-arrow-left"></i> Back
+        </button>
+        <button
+          id="updateButton"
+          class="btn btn-sm btn-primary mb-3 float-right"
+        >
+          Update
+        </button>
+        <a id="detailTitle" href="#" target="_blank" class="mb-3 d-block"></a>
+        <textarea id="detailText" class="form-control mt-3"></textarea>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
